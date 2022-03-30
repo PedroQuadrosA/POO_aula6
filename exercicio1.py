@@ -6,14 +6,15 @@ def potencia (base, expo):
     aux = 0
     
     aux = base
-    for i in range(0,int(expo-1)):
+    for i in range(0,int(expo-1)): #
         r = 0
         for j in range(0,int(aux)):
             r = r + base
         aux = r
 
-    print("Potencia: ", aux)
+    return aux
 
 base = input("Base: ")
 expoente = input("Expoente: ")
 potencia(int(base),int(expoente))
+print(f"O resultado da potencia eh: {potencia(int(base),int(expoente))}")
